@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Lobster&family=Noto+Sans:wght@100&family=Raleway:ital,wght@1,100;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;1,100&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --chocolate:#3D1C02;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: var(--chocolate);
+    color: #fff;
+}
+html {
+    font-size: 77%;
+    font-weight:700;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+.header-1,
+.header-2,
+.header-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--chocolate);
+    position: relative; 
+    z-index: 10000;
+}
+
+
+
+.header-1 {
+    border-bottom: .1px solid rgba(255,255,255,.2);
+}
+.header-3 {
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+    z-index: 10000;
+}
+.header-1 span {
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1.9rem;
+}
+.header-1 span a {
+    color: #fff;
+}
+.header-2 .search-bar-container {
+    display: flex;
+    align-items: center;
+    width: 50rem;
+    padding: 1.6rem;
+    background: rgba(255,255,255,.2) ;
+    border-radius: .5rem;
+}
+.header-2 .search-bar-container #search-bar {
+    width: 100%;
+    background: none;
+    text-transform: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.header-2 .search-bar-container #search-bar::placeholder {
+    text-transform: capitalize;
+    color: #ddd; 
+}
+.header-2 .search-bar-container label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 .5rem;
+}
+.header-2 .search-bar-container label:hover {
+    color: khaki;
+}
+.header-3 .navbar a {
+    color: #333;
+    font-size:large;
+    margin-right: 2rem;
+}
+.header-3 .icons a {
+    color: #333;
+    font-size: 2.7rem;
+    margin-left: 2rem;
+}
+.header-3 a:hover {
+    color: var(--pink);
+}
+#menu-bar {
+    font-size: 3rem;
+    color: #333;
+    border: .1rem, solid #333;
+    border-radius: .6rem;
+    padding: .5rem 1.4rem;
+    cursor: pointer;
+    display: none;
+}
+.header-3.active {
+    position: fixed;
+    top: 0; right: 0; left: 0;
+}
+
+section {
+    padding: 1.5rem 9%;
+
+}
+.heading {
+    font-size: 3rem;
+    color: #444;
+    padding-left: 1rem;
+    border-left: .4rem solid var(--pink);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+/* for wishlist page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--chocolate);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.wishlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wishlist li {
+    display: flex;
+    border: 0.5px solid #ddd;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.wishlist img {
+    max-width: 100px;
+    margin-right: 1rem;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+

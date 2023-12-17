@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Lobster&family=Noto+Sans:wght@100&family=Raleway:ital,wght@1,100;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;1,100&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --chocolate:#3D1C02;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: var(--chocolate);
+    color: #fff;
+}
+html {
+    font-size: 77%;
+    font-weight:700;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+.header-1,
+.header-2,
+.header-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--chocolate);
+    position: relative; 
+    z-index: 10000; 
+}
+
+
+.header-1 {
+    border-bottom: .1px solid rgba(255,255,255,.2);
+}
+.header-3 {
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+    z-index: 10000;
+}
+
+.header-1 span {
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1.9rem;
+}
+.header-1 span a {
+    color: #fff;
+}
+.header-2 .search-bar-container {
+    display: flex;
+    align-items: center;
+    width: 50rem;
+    padding: 1.6rem;
+    background: rgba(255,255,255,.2) ;
+    border-radius: .5rem;
+}
+.header-2 .search-bar-container #search-bar {
+    width: 100%;
+    background: none;
+    text-transform: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.header-2 .search-bar-container #search-bar::placeholder {
+    text-transform: capitalize;
+    color: #ddd; 
+}
+.header-2 .search-bar-container label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 .5rem;
+}
+.header-2 .search-bar-container label:hover {
+    color: khaki;
+}
+.header-3 .navbar a {
+    color: #333;
+    font-size:large;
+    margin-right: 2rem;
+}
+.header-3 .icons a {
+    color: #333;
+    font-size: 2.7rem;
+    margin-left: 2rem;
+}
+.header-3 a:hover {
+    color: var(--pink);
+}
+#menu-bar {
+    font-size: 3rem;
+    color: #333;
+    border: .1rem, solid #333;
+    border-radius: .6rem;
+    padding: .5rem 1.4rem;
+    cursor: pointer;
+    display: none;
+}
+.header-3.active {
+    position: fixed;
+    top: 0; right: 0; left: 0;
+}
+
+section {
+    padding: 1.5rem 9%;
+
+}
+.heading {
+    font-size: 3rem;
+    color: #444;
+    padding-left: 1rem;
+    border-left: .4rem solid var(--pink);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+
+/* for add to cart page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: var(--chocolate);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    
+    margin: 0; 
+}
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.cart {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h2 {
+    color: #333;
+}
+
+.price {
+    color: #e44d26;
+    font-weight: bold;
+}
+
+.remove-btn {
+    background-color: #e44d26;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.remove-btn:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.checkout-btn {
+    background-color: #e44d26;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background-color: #333;
+}
